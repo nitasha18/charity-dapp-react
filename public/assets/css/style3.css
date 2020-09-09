@@ -1,0 +1,433 @@
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 10px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+#sidebar {
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: -250px;
+  height: 100vh;
+  z-index: 22;
+  background: #fff;
+  color: #fff;
+  transition: all 0.3s;
+  overflow-y: scroll;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#dismiss {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #7386d5;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#dismiss:hover {
+  background: #fff;
+  color: #7386d5;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #6d7fcc;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 15px;
+  display: block;
+  color: #000;
+}
+
+#sidebar ul li a:hover {
+  color: #7386d5;
+  background: #fff;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded='true'] {
+  color: #fff;
+  background: #6d7fcc;
+}
+
+a[data-toggle='collapse'] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #6d7fcc;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+  color: #7386d5;
+}
+
+a.article,
+a.article:hover {
+  background: #6d7fcc !important;
+  color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+  width: 100%;
+  padding: 0;
+  min-height: 100vh;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.hashtag a {
+  background: #e5e5e5;
+  color: #000;
+  font-size: 11px;
+}
+.combg .btn-gray {
+  background: #ddd;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.icon {
+  position: relative;
+  left: -25px;
+}
+
+/* recommented css*/
+.recom-rides .card {
+  margin-bottom: 15px;
+}
+.recom-rides .card-white .card-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #ddd;
+  border: 1px solid #dddddd;
+  margin-bottom: 15px;
+}
+.recom-rides .card-white .card-footer {
+  background-color: #fff;
+  border-color: #ddd;
+}
+.recom-rides .card-white .h5 {
+  font-size: 14px;
+  //font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.recom-rides .card-white .time {
+  font-size: 12px;
+  //font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.recom-rides .post .post-heading {
+  height: auto;
+  padding: 13px 15px;
+  box-shadow: 0px 3px 0px #ae9d9d;
+}
+.recom-rides .post .post-heading .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  display: block;
+  margin-right: 15px;
+}
+.recom-rides .post .post-heading .meta .title {
+  margin-bottom: 0;
+}
+.recom-rides .post .post-heading .meta .title a {
+  color: black;
+}
+.recom-rides .post .post-heading .meta .title a:hover {
+  color: #aaaaaa;
+}
+.recom-rides .post .post-heading .meta .time {
+  margin: 3px 0 2px 0px;
+  color: #999;
+}
+.recom-rides .post .post-image .image {
+  width: 100%;
+  height: auto;
+}
+.recom-rides .seats {
+  font-size: 11px;
+  color: #000;
+}
+.recom-rides .droplocation {
+  font-size: 12px;
+}
+.recom-rides .droplocation .time {
+  position: absolute;
+  right: 10px;
+}
+.clear {
+  clear: both;
+}
+
+.look-ride .map {
+  width: 100%;
+  min-height: 79vh;
+  background: url('../img/map.jpg') center;
+  background-attachment: scroll;
+  background-size: auto;
+  background-attachment: scroll;
+  background-size: auto;
+  background-size: cover;
+  position: relative;
+  z-index: 15;
+  border: 1px solid #0000004f;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.14);
+}
+.look-ride .center-box {
+  position: relative;
+  top: 160px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  margin: auto;
+  min-height: auto;
+  width: 370px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: ;
+  background: #fff;
+  padding: 20px;
+}
+.look-ride .center-box-full {
+  width: 97% !important;
+  top: 60px;
+}
+
+/**
+ * Profile image component
+ */
+
+.profile-header-container .profile-header-img > img.img-circle {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #51d2b7;
+  border-radius: 50%;
+}
+
+.profile-header-container .profile-header {
+  margin-top: 43px;
+}
+
+/**
+ * Ranking component
+ */
+.profile-header-container .rank-label-container {
+  margin-top: -19px;
+  /* z-index: 1000; */
+  text-align: center;
+}
+
+.profile-header-container .label.label-default.rank-label {
+  background-color: rgb(81, 210, 183);
+  padding: 5px 10px 5px 10px;
+  border-radius: 27px;
+}
+
+.star .checked {
+  color: orange;
+}
+
+.files input {
+  outline: 2px dashed #92b0b3;
+  outline-offset: -10px;
+  -webkit-transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  padding: 120px 0px 85px 35%;
+  text-align: center !important;
+  margin: 0;
+  width: 100% !important;
+}
+.files input:focus {
+  outline: 2px dashed #92b0b3;
+  outline-offset: -10px;
+  -webkit-transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  border: 1px solid #92b0b3;
+}
+.files {
+  position: relative;
+}
+.files:after {
+  pointer-events: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 50px;
+  right: 0;
+  height: 56px;
+  content: '';
+  background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+  display: block;
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.color input {
+  background-color: #f1f1f1;
+}
+/* .files:before {
+    position: absolute;
+    bottom: 10px;
+    left: 0;  pointer-events: none;
+    width: 100%;
+    right: 0;
+    height: 57px;
+    content: " or drag it here. ";
+    display: block;
+    margin: 0 auto;
+    color: #2ea591;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+} */
+
+.break-word {
+  word-wrap: break-word;
+}
+.project-tab {
+}
+.project-tab #tabs {
+  background: #007b5e;
+  color: #eee;
+}
+.project-tab #tabs h6.section-title {
+  color: #eee;
+}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #0062cc;
+  background-color: transparent;
+  border-color: transparent transparent #f3f3f3;
+  border-bottom: 3px solid !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+.project-tab .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #0062cc;
+  font-size: 16px;
+  font-weight: 600;
+}
+.project-tab .nav-link:hover {
+  border: none;
+}
+.project-tab thead {
+  background: #f3f3f3;
+  color: #333;
+}
+.project-tab a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+.yellowbg {
+  background: #ffc451;
+  color: #000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+
+  line-height: 23px;
+}
+.yellowbg h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  font-weight: 600;
+  margin: 0;
+  padding: 0px;
+}
+.yellowbg h6 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  font-weight: 600;
+}
+.yellowbg a {
+  color: #000 !important;
+  font-weight: 300;
+}
