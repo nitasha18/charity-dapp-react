@@ -64,6 +64,7 @@ export class Footer extends Component {
                   </li>
                   <li><i className="bx bx-chevron-right"></i> <a href="/#aboutus">About</a></li>
                   <li><i className="bx bx-chevron-right"></i> <a href="/#why">Why</a></li>
+                  <li><i className="bx bx-chevron-right"></i> <a href="pdf/CharityDApp_UserManual.pdf">User Guide</a></li>
                 </ul>
               </div>
 
